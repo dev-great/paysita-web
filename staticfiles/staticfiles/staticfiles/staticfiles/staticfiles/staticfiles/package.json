@@ -1,0 +1,17 @@
+{
+  "name": "masco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev:css": "tailwindcss -i ./build/tailwind.css -o ./static/css/style.css --watch",
+    "build:css": "tailwindcss -i ./build/tailwind.css -o ./static/css/style.css",
+    "minify:css": "tailwindcss -i ./build/tailwind.css -o ./static/css/style.css --minify",
+    "start":"python manage.py runserver"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

@@ -1,0 +1,163 @@
+
+{% extends './partials/layout1.html' %}
+{% load static %}
+{% block headerLogo %}
+    <img src="/static/img/logo-blue-dark.png" alt="Masco" width="109" height="24" />
+{% endblock headerLogo%}
+
+{% block bgCustom %}
+bg-white
+{% endblock %}
+
+{% block headButtons %}
+
+<div class="flex items-center gap-6">
+    <a href="/contact" class="btn is-blue btn-animation group hidden rounded-[3px] sm:inline-block"><span>Contact Us</span></a>
+    <!-- Responsive Offcanvas Menu Button -->
+    <div class="block lg:hidden">
+        <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</div>
+
+{% endblock headButtons %}
+
+
+
+
+
+{% block content %}
+
+     <!-- Breadcrumb Section Start -->
+     <section class="section-breadcrumb">
+        <!-- Breadcrumb Section Spacer -->
+        <div class="breadcrumb-wrapper">
+            <!-- Section Container -->
+            <div class="container-default">
+                <div class="breadcrumb-block">
+                    <h1 class="breadcrumb-title">Blog</h1>
+                    <ul class="breadcrumb-nav">
+                        <li><a href="/">Home</a></li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Section Container -->
+
+         
+        </div>
+        <!-- Breadcrumb Section Spacer -->
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Blog Section Start -->
+    <section class="blog-section">
+        <!-- Section Spacer -->
+        <div class="section-space">
+            <!-- Section Container -->
+            <div class="container-default">
+               <div class="grid grid-cols-1 justify-center gap-y-10">
+                    <div class="flex flex-col gap-y-10 lg:gap-y-14 xl:gap-y-20">
+                        <!-- Blog Post List -->
+                        <div class="grid gap-y-10">
+                            <!-- Blog Post Single Item -->
+                             {% for blog in page_obj %}
+                            <div class="jos">
+                                <div class="group overflow-hidden rounded-[10px] border border-[#E1E1E] bg-white hover:border-white hover:shadow-[0_4px_60px_rgba(10,16,47,0.08)]">
+                                    <a href="{% url 'blog_detail' blog.slug %}" class="block overflow-hidden">
+                                        <img src="{{ blog.image.url }}" alt="blog-main-1" width="856" height="450" class="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105" />
+                                    </a>
+                                    <div class="p-[30px]">
+                                        <!-- Blog Post Meta -->
+                                        <ul class="flex flex-wrap items-center gap-4 text-base font-semibold sm:gap-6">
+                                            <li>
+                                                <a href="{% url 'blog_detail' blog.slug %}" class="flex items-center gap-x-[10px] hover:text-ColorBlue">
+                                                    <img src="{% static 'img/favicon.png' %}" alt="{{ blog.title }}" width="45" height="45" class="rounded-[50%]" />
+                                                    By {{ blog.author }}
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'blog_detail' blog.slug %}" class="flex items-center gap-x-[10px] hover:text-ColorBlue">
+                                                    <i class="fa-regular fa-calendar"></i>
+                                                    {{ blog.created_at|date:"M d, Y" }}
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'blog_detail' blog.slug %}" class="rounded-[50px] bg-ColorBlack/5 px-[26px] py-1.5 text-ColorBlack/60 hover:bg-ColorBlue hover:text-white">{{ blog.category }}</a>
+                                            </li>
+                                        </ul>
+                                        <!-- Blog Post Meta -->
+                                        <h2 class="mb-5 mt-8 line-clamp-2 font-body text-2xl font-bold leading-[1.4] -tracking-[1px] lg:text-3xl">
+                                            <a href="{% url 'blog_detail' blog.slug %}">{{ blog.title }}</a>
+                                        </h2>
+                                        <p class="mb-7 line-clamp-2 last:mb-0">
+                                          {{ blog.content|striptags|truncatechars:400 }}
+                                        </p>
+                                        <a href="{% url 'blog_detail' blog.slug %}" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Read More
+                                            <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            {% empty %}
+                                <p>No blog posts found.</p>
+                            {% endfor %}
+                            <!-- Blog Post Single Item -->
+                       
+                        </div>
+                        <!-- Blog Post List -->
+                      <nav aria-label="Pagination" class="jos flex justify-center" data-jos_animation="fade">
+    <ul class="flex gap-x-[15px]">
+        {% if page_obj.has_previous %}
+            <li>
+                <a href="?page={{ page_obj.previous_page_number }}" aria-label="Previous" class="group flex h-10 w-10 items-center justify-center rounded-[50%] bg-white font-semibold transition-all duration-300 hover:bg-ColorBlue hover:text-white lg:h-[50px] lg:w-[50px]">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+            </li>
+        {% endif %}
+
+        {% for page_num in page_obj.paginator.page_range %}
+            {% if page_num == page_obj.number %}
+                <li>
+                    <a href="?page={{ page_num }}" aria-current="page" class="group flex h-10 w-10 items-center justify-center rounded-[50%] bg-ColorBlue font-semibold text-white transition-all duration-300 hover:bg-ColorBlue hover:text-white lg:h-[50px] lg:w-[50px]">{{ page_num }}</a>
+                </li>
+            {% else %}
+                <li>
+                    <a href="?page={{ page_num }}" class="group flex h-10 w-10 items-center justify-center rounded-[50%] bg-white font-semibold transition-all duration-300 hover:bg-ColorBlue hover:text-white lg:h-[50px] lg:w-[50px]">{{ page_num }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+            <li>
+                <a href="?page={{ page_obj.next_page_number }}" aria-label="Next" class="group flex h-10 w-10 items-center justify-center rounded-[50%] bg-white font-semibold transition-all duration-300 hover:bg-ColorBlue hover:text-white lg:h-[50px] lg:w-[50px]">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>
+
+                    </div>
+                   
+                    <!-- Blog Aside -->
+                </div>
+            </div>
+            <!-- Section Container -->
+        </div>
+        <!-- Section Spacer -->
+    </section>
+    <!-- Blog Section End -->
+
+{% endblock content %}
+
+
+
+{% block footer %}
+    {% include "./partials/footer/footer1.html" %}
+{% endblock footer %} 

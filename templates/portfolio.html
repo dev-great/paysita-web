@@ -1,0 +1,244 @@
+{% extends './partials/layout1.html' %}
+
+{% block headerLogo %}
+<img src="/static/img/logo-blue-dark.png" alt="Masco" width="109" height="24" />
+{% endblock headerLogo%}
+
+{% block bgCustom %}
+bg-white
+{% endblock %}
+
+{% block headButtons %}
+
+<div class="flex items-center gap-6">
+    <a href="/signup" class="btn is-blue btn-animation group hidden rounded-[3px] sm:inline-block"><span>Contact Us</span></a>
+    <!-- Responsive Offcanvas Menu Button -->
+    <div class="block lg:hidden">
+        <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</div>
+
+{% endblock headButtons %}
+
+
+
+{% block content %}
+
+ <!-- Breadcrumb Section Start -->
+ <section class="section-breadcrumb">
+    <!-- Breadcrumb Section Spacer -->
+    <div class="breadcrumb-wrapper">
+        <!-- Section Container -->
+        <div class="container-default">
+            <div class="breadcrumb-block">
+                <h1 class="breadcrumb-title">Businesses</h1>
+                <ul class="breadcrumb-nav">
+                    <li><a href="/">Home</a></li>
+                    <li>Businesses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section Spacer -->
+</section>
+<!-- Breadcrumb Section End -->
+
+
+
+
+<!-- Process Section Start -->
+<section class="section-process">
+    <!-- Section Background -->
+    <div class="bg-[#0A102F]">
+        <!-- Section Space -->
+        <div class="section-space">
+            <!-- Section Container -->
+            <div class="container-default">
+                <!-- Section Content Wrapper -->
+                <div class="jos mb-[60px] xl:mb-20">
+                    <!-- Section Content Block -->
+                    <div class="mx-auto max-w-[636px]">
+                        <h2 class="text-center font-GeneralSans font-semibold text-white">
+                           Built to Power the African Business Dream.
+                        </h2>
+                    </div>
+                    <!-- Section Content Block -->
+                </div>
+                <!-- Section Content Wrapper -->
+
+                 <!-- Content Area Single -->
+                 <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-20 xl:grid-cols-[1fr_minmax(0,_1.1fr)] xl:gap-[100px]">
+                    <!-- Content Block Left -->
+                    <div class="jos lg:order-2" data-jos_animation="fade-left">
+                        <!-- Section Wrapper -->
+                        <div>
+                            <!-- Section Block -->
+                            <div class="mb-5">
+                                <h2 class="font-GeneralSans font-semibold text-white/80">
+                                    With Paysita, we don’t just run business. We run business smart.
+                                </h2>
+                            </div>
+                            <!-- Section Block -->
+                        </div>
+                        <!-- Section Wrapper -->
+                        <p class="text-white/80" >
+                           Paysita is not just a fintech app—it’s a business enabler.
+Whether you're a digital freelancer, a logistics company, a fashion brand in Aba, or a software
+startup in Nairobi, we help you go further.
+                        </p>
+                        <!-- Horizontal Line Separator -->
+                       
+                            <ul class="flex flex-col gap-y-5">
+                                <li>
+                                    <div class="mb-4 font-GeneralSans text-xl  text-white lg:text-2xl">
+                                        <span class="mr-[5px] text-ColorBlue"><i class="fa-solid fa-badge-check"></i></span>
+                                        Accept local & international payments
+                                    </div>
+                                   
+                                </li>
+                                <li>
+                                    <div class="mb-4 font-GeneralSans text-xl text-white lg:text-2xl">
+                                        <span class="mr-[5px] text-ColorBlue"><i class="fa-solid fa-badge-check"></i></span>
+                                        Manage multi-currency wallets
+                                    </div>
+                                   
+                                </li>
+                                <li>
+                                    <div class="mb-4 font-GeneralSans text-xl  text-white lg:text-2xl">
+                                        <span class="mr-[5px] text-ColorBlue"><i class="fa-solid fa-badge-check"></i></span>
+                                        Send money to staff, suppliers, or partners
+                                    </div>
+                                    
+                                </li>
+                                <li>
+                                    <div class="mb-4 font-GeneralSans text-xl  text-white lg:text-2xl">
+                                        <span class="mr-[5px] text-ColorBlue"><i class="fa-solid fa-badge-check"></i></span>
+                                        Get paid in USD, GBP, EUR or your local currency
+                                    </div>
+                                   
+                                </li>
+                                <li>
+                                    <div class="mb-4 font-GeneralSans text-xl  text-white lg:text-2xl">
+                                        <span class="mr-[5px] text-ColorBlue"><i class="fa-solid fa-badge-check"></i></span>
+                                       Avoid forex delays and crazy bank charges
+                                    </div>
+                                   
+                                </li>
+                            </ul>
+                       
+                    </div>
+                    <!-- Content Block Left -->
+                    <!-- Content Block Right -->
+                    <div class="jos relative z-10 lg:order-1" data-jos_animation="fade-right">
+                        <!-- Content Image -->
+                        <img src="/static/img/th-6/content-img-1.png" alt="content-img-1" width="561" height="501" class="h-auto w-auto rounded-[5px]" />
+                   </div>
+                    <!-- Content Block Right -->
+                </div>
+                <!-- Content Area Single -->
+
+               
+            </div>
+            <!-- Section Container -->
+        </div>
+        <!-- Section Space -->
+    </div>
+    <!-- Section Background -->
+</section>
+<!-- Process Section End -->
+
+
+<!-- Content Section Start -->
+<section class="section-content">
+    <!-- Section Spacer -->
+    <div class="section-space">
+        <!-- Section Container -->
+        <div class="container-custom">
+            <div class="flex flex-col gap-y-20 lg:gap-y-[100px] xl:gap-y-[120px]">
+               
+                <!-- Content Area Single -->
+                <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-20 xl:grid-cols-[1.1fr_minmax(0,_1fr)] xl:gap-[100px]">
+                    <!-- Content Block Left -->
+                    <div class="jos" data-jos_animation="fade-left">
+                        <!-- Section Wrapper -->
+                        <div>
+                            <!-- Section Block -->
+                            <div class="mb-5">
+                                <h2 class="font-GeneralSans font-semibold">
+                                    Take Your Hustle Global—Right From Your Phone.
+                                </h2>
+                            </div>
+                            <!-- Section Block -->
+                        </div>
+                        <!-- Section Wrapper -->
+                        <p>
+                           The African dream doesn’t end at the border. Whether you're shipping fabrics to the UK, doing gigs for a client in the US, or buying raw materials from Dubai, Paysita gives your business global reach.
+                        </p>
+                        <div class="mt-12 flex flex-col gap-10 sm:flex-row sm:gap-[50px]">
+                            <ul class="flex flex-col gap-y-5">
+                                <li>
+                                    <div class="mb-4 font-GeneralSans text-xl font-semibold text-ColorBlack lg:text-2xl">
+                                        <span class="mr-[5px] text-ColorBlue"><i class="fa-solid fa-badge-check"></i></span>
+                                        Get virtual dollar cards for international subscriptions
+                                    </div>
+                                   
+                                </li>
+                                <li>
+                                    <div class="mb-4 font-GeneralSans text-xl font-semibold text-ColorBlack lg:text-2xl">
+                                        <span class="mr-[5px] text-ColorBlue"><i class="fa-solid fa-badge-check"></i></span>
+                                        Pay global suppliers without stress
+                                    </div>
+                                   
+                                </li>
+                                 <li>
+                                    <div class="mb-4 font-GeneralSans text-xl font-semibold text-ColorBlack lg:text-2xl">
+                                        <span class="mr-[5px] text-ColorBlue"><i class="fa-solid fa-badge-check"></i></span>
+                                        Collect payments from foreign clients with ease
+                                    </div>
+                                   
+                                </li>
+                                 <li>
+                                    <div class="mb-4 font-GeneralSans text-xl font-semibold text-ColorBlack lg:text-2xl">
+                                        <span class="mr-[5px] text-ColorBlue"><i class="fa-solid fa-badge-check"></i></span>
+                                        Keep track of every naira, dollar, and cedi—in one dashboard
+                                    </div>
+                                   
+                                </li>
+                                 <li>
+                                    <div class="mb-4 font-GeneralSans text-xl font-semibold text-ColorBlack lg:text-2xl">
+                                        <span class="mr-[5px] text-ColorBlue"><i class="fa-solid fa-badge-check"></i></span>
+                                        Say goodbye to bank queues, slow platforms, and international delays
+                                    </div>
+                                   
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Content Block Left -->
+                    <!-- Content Block Right -->
+                    <div class="jos relative z-10" data-jos_animation="fade-right">
+                        <!-- Content Image -->
+                        <img src="/static/img/th-6/content-img-2.png" alt="content-img-2" width="561" height="501" class="h-auto w-auto rounded-[5px]" />
+                        </div>
+                    <!-- Content Block Right -->
+                </div>
+                <!-- Content Area Single -->
+            </div>
+        </div>
+        <!-- Section Container -->
+    </div>
+    <!-- Section Spacer -->
+</section>
+<!-- Content Section End -->
+
+{% endblock content %}
+
+
+
+{% block footer %}
+    {% include "./partials/footer/footer1.html" %}
+{% endblock footer %} 

@@ -1,0 +1,370 @@
+{% extends './partials/layout1.html' %}
+
+{% block headerLogo %}
+<img src="/static/img/logo-blue-dark.png" alt="Masco" width="109" height="24" />
+{% endblock headerLogo%}
+
+{% block bgCustom %}
+bg-white
+{% endblock %}
+
+{% block headButtons %}
+
+<div class="flex items-center gap-6">
+    <a href="/signup" class="btn is-blue btn-animation group hidden rounded-[3px] sm:inline-block"><span>Contact Us</span></a>
+    <!-- Responsive Offcanvas Menu Button -->
+    <div class="block lg:hidden">
+        <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</div>
+
+{% endblock headButtons %}
+
+
+
+{% block content %}
+
+ <!-- Breadcrumb Section Start -->
+ <section class="section-breadcrumb">
+    <!-- Breadcrumb Section Spacer -->
+    <div class="breadcrumb-wrapper">
+        <!-- Section Container -->
+        <div class="container-default">
+            <div class="breadcrumb-block">
+                <h1 class="breadcrumb-title">Businesses</h1>
+                <ul class="breadcrumb-nav">
+                    <li><a href="/">Home</a></li>
+                    <li>Businesses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section Spacer -->
+</section>
+<!-- Breadcrumb Section End -->
+
+
+<!-- Content Section Start -->
+<section class="section-content">
+    <!-- Section Spacer -->
+    <div class="section-space">
+        <!-- Section Container -->
+        <div class="container-custom">
+            <div class="flex flex-col gap-y-20 lg:gap-y-[100px] xl:gap-y-[120px]">
+               
+                <!-- Content Area Single -->
+                <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-20 xl:grid-cols-[1.1fr_minmax(0,_1fr)] xl:gap-[100px]">
+                    <!-- Content Block Left -->
+                    <div class="jos" data-jos_animation="fade-left">
+                        <!-- Section Wrapper -->
+                        <div>
+                            <!-- Section Block -->
+                            <div class="mb-5">
+                                <h2 class="font-GeneralSans font-semibold">
+                                    Partnering with Exceptional Businesses
+                                </h2>
+                            </div>
+                            <!-- Section Block -->
+                        </div>
+                        <!-- Section Wrapper -->
+                        <p>
+                            At Paysita, we empower businesses and individuals across Africa and beyond to reach their full potential. Together, we’re driving growth, innovation, and lasting success.
+                        </p>
+                        <div class="mt-12 flex flex-col gap-10 sm:flex-row sm:gap-[50px]">
+                            <ul class="flex flex-col gap-y-5">
+                                <li>
+                                    <div class="mb-4 font-GeneralSans text-xl font-semibold text-ColorBlack lg:text-2xl">
+                                        <span class="mr-[5px] text-ColorBlue"><i class="fa-solid fa-badge-check"></i></span>
+                                        Global Accessibility
+                                    </div>
+                                    <p class="ml-[35px] max-w-[548px]">
+                                        Expand your reach and accept payments seamlessly from customers across multiple African countries. With Paysita, users can pay effortlessly through a variety of e-channels—driving growth for your business.
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="mb-4 font-GeneralSans text-xl font-semibold text-ColorBlack lg:text-2xl">
+                                        <span class="mr-[5px] text-ColorBlue"><i class="fa-solid fa-badge-check"></i></span>
+                                        Customizable Solutions
+                                    </div>
+                                    <p class="ml-[35px] max-w-[548px]">
+                                        Paysita for Business gives you the flexibility to tailor payment experiences that match your brand. Design smooth, intuitive solutions that keep your customers coming back.
+
+
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Content Block Left -->
+                    <!-- Content Block Right -->
+                    <div class="jos relative z-10" data-jos_animation="fade-right">
+                        <!-- Content Image -->
+                        <img src="/static/img/th-6/content-img-2.png" alt="content-img-2" width="561" height="501" class="h-auto w-auto rounded-[5px]" />
+                        </div>
+                    <!-- Content Block Right -->
+                </div>
+                <!-- Content Area Single -->
+            </div>
+        </div>
+        <!-- Section Container -->
+    </div>
+    <!-- Section Spacer -->
+</section>
+<!-- Content Section End -->
+
+
+<!-- Process Section Start -->
+<section class="section-process">
+    <!-- Section Background -->
+    <div class="bg-[#0A102F]">
+        <!-- Section Space -->
+        <div class="section-space">
+            <!-- Section Container -->
+            <div class="container-default">
+                <!-- Section Content Wrapper -->
+                <div class="jos mb-[60px] xl:mb-20">
+                    <!-- Section Content Block -->
+                    <div class="mx-auto max-w-[636px]">
+                        <h2 class="text-center font-GeneralSans font-semibold text-white">
+                            From Africa to the World: Scalable Payment Solutions
+                        </h2>
+                    </div>
+                    <!-- Section Content Block -->
+                </div>
+                <!-- Section Content Wrapper -->
+
+                 <!-- Content Area Single -->
+                 <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-20 xl:grid-cols-[1fr_minmax(0,_1.1fr)] xl:gap-[100px]">
+                    <!-- Content Block Left -->
+                    <div class="jos lg:order-2" data-jos_animation="fade-left">
+                        <!-- Section Wrapper -->
+                        <div>
+                            <!-- Section Block -->
+                            <div class="mb-5">
+                                <h2 class="font-GeneralSans font-semibold text-white/80">
+                                    Paysita delivers fast, secure, and scalable transactions across borders.
+                                </h2>
+                            </div>
+                            <!-- Section Block -->
+                        </div>
+                        <!-- Section Wrapper -->
+                        <p class="text-white/80" >
+                            We are crafting Africa’s financial gateway to the world. Designed to meet the diverse needs of emerging markets while standing shoulder to shoulder with global standards, Paysita delivers fast, secure, and intelligent bill payment solutions that scale with you.
+                        </p>
+                        <!-- Horizontal Line Separator -->
+                        <div class="my-7 h-px w-full bg-ColorBlack opacity-10 xl:my-10 xxl:my-14"></div>
+                        <div class="mt-12 flex flex-col gap-10 sm:flex-row sm:gap-[50px]">
+                            <div>
+                                <div class="font-GeneralSans text-[66px] font-semibold leading-[0.9] text-ColorBlue" data-module="countup">
+                                    <span class="start-number" data-countup-number="99">99</span>%
+                                </div>
+                                <span class="text-white/80"> Payment Success Rate</span>
+                            </div>
+                            <div>
+                                <div class="font-GeneralSans text-[66px] font-semibold leading-[0.9] text-ColorBlue" data-module="countup">
+                                    <span class="start-number" data-countup-number="50000">50000</span>+
+                                </div>
+                                <span class="text-white/80">Successful Transactions Generated</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content Block Left -->
+                    <!-- Content Block Right -->
+                    <div class="jos relative z-10 lg:order-1" data-jos_animation="fade-right">
+                        <!-- Content Image -->
+                        <img src="/static/img/th-6/content-img-1.png" alt="content-img-1" width="561" height="501" class="h-auto w-auto rounded-[5px]" />
+                   </div>
+                    <!-- Content Block Right -->
+                </div>
+                <!-- Content Area Single -->
+
+               
+            </div>
+            <!-- Section Container -->
+        </div>
+        <!-- Section Space -->
+    </div>
+    <!-- Section Background -->
+</section>
+<!-- Process Section End -->
+
+
+
+
+<!-- Service Section Start -->
+<div class="section-service">
+    <div class="relative z-10 overflow-hidden bg-ColorOffWhite">
+        <!-- Section Space -->
+        <div class="section-space">
+            <!-- Section Container -->
+            <div class="container-default">
+                <!-- Service List -->
+                <div class="grid gap-6 sm:grid-cols-2">
+                    <!-- Service Item -->
+                    <div class="jos" data-jos_delay="0">
+                        <div class="group rounded-[10px] bg-white p-8 transition-all duration-300 ease-in-out hover:shadow-[0_4px_60px_0_rgba(10,16,47,0.06)] lg:p-10">
+                            <div class="flex flex-col gap-x-10 gap-y-6 sm:gap-y-8 lg:flex-row">
+                                <div class="relative mx-auto flex w-16 items-center justify-center lg:w-[98px]">
+                                    <img src="/static/img/icons/icon-black-service-1.svg" alt="icon-service-1" width="98" height="100" class="opcity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0" />
+                                    <img src="/static/img/icons/icon-blue-service-1.svg" alt="icon-service-1" width="98" height="100" class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100" />
+                                </div>
+                                <div class="flex-1 text-center lg:text-left">
+                                    <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack lg:text-2xl">
+                                        Lorem ipsum dolor sit amet
+                                    </div>
+                                    <p class="mb-5 line-clamp-2 text-ColorBlack/80">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+                                    </p>
+                                    <a href="/service-details" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
+                                        <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Item -->
+                   <!-- Service Item -->
+<div class="jos" data-jos_delay="0.3">
+    <div class="group rounded-[10px] bg-white p-8 transition-all duration-300 ease-in-out hover:shadow-[0_4px_60px_0_rgba(10,16,47,0.06)] lg:p-10">
+        <div class="flex flex-col gap-x-10 gap-y-6 sm:gap-y-8 lg:flex-row">
+            <div class="relative mx-auto flex w-16 items-center justify-center lg:w-[98px]">
+                <img src="/static/img/icons/icon-black-service-1.svg" alt="icon-service" width="98" height="100" class="opcity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0" />
+                <img src="/static/img/icons/icon-black-service-1.svg" alt="icon-service" width="98" height="100" class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100" />
+            </div>
+            <div class="flex-1 text-center lg:text-left">
+                <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack lg:text-2xl">
+                    Lorem ipsum dolor sit amet
+                </div>
+                <p class="mb-5 line-clamp-2 text-ColorBlack/80">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+                </p>
+                <a href="/service-details" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
+                    <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service Item -->
+
+<!-- Service Item -->
+<div class="jos" data-jos_delay="0.6">
+    <div class="group rounded-[10px] bg-white p-8 transition-all duration-300 ease-in-out hover:shadow-[0_4px_60px_0_rgba(10,16,47,0.06)] lg:p-10">
+        <div class="flex flex-col gap-x-10 gap-y-6 sm:gap-y-8 lg:flex-row">
+            <div class="relative mx-auto flex w-16 items-center justify-center lg:w-[98px]">
+                <img src="/static/img/icons/icon-black-service-1.svg" alt="icon-service" width="98" height="100" class="opcity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0" />
+                <img src="/static/img/icons/icon-black-service-1.svg" alt="icon-service" width="98" height="100" class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100" />
+            </div>
+            <div class="flex-1 text-center lg:text-left">
+                <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack lg:text-2xl">
+                    Lorem ipsum dolor sit amet
+                </div>
+                <p class="mb-5 line-clamp-2 text-ColorBlack/80">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+                </p>
+                <a href="/service-details" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
+                    <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service Item -->
+
+<!-- Service Item -->
+<div class="jos" data-jos_delay="0.9">
+    <div class="group rounded-[10px] bg-white p-8 transition-all duration-300 ease-in-out hover:shadow-[0_4px_60px_0_rgba(10,16,47,0.06)] lg:p-10">
+        <div class="flex flex-col gap-x-10 gap-y-6 sm:gap-y-8 lg:flex-row">
+            <div class="relative mx-auto flex w-16 items-center justify-center lg:w-[98px]">
+                <img src="/static/img/icons/icon-black-service-1.svg" alt="icon-service" width="98" height="100" class="opcity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0" />
+                <img src="/static/img/icons/icon-black-service-1.svg" alt="icon-service" width="98" height="100" class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100" />
+            </div>
+            <div class="flex-1 text-center lg:text-left">
+                <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack lg:text-2xl">
+                    Lorem ipsum dolor sit amet
+                </div>
+                <p class="mb-5 line-clamp-2 text-ColorBlack/80">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+                </p>
+                <a href="/service-details" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
+                    <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service Item -->
+
+<!-- Service Item -->
+<div class="jos" data-jos_delay="1.2">
+    <div class="group rounded-[10px] bg-white p-8 transition-all duration-300 ease-in-out hover:shadow-[0_4px_60px_0_rgba(10,16,47,0.06)] lg:p-10">
+        <div class="flex flex-col gap-x-10 gap-y-6 sm:gap-y-8 lg:flex-row">
+            <div class="relative mx-auto flex w-16 items-center justify-center lg:w-[98px]">
+                <img src="/static/img/icons/icon-black-service-1.svg" alt="icon-service" width="98" height="100" class="opcity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0" />
+                <img src="/static/img/icons/icon-black-service-1.svg" alt="icon-service" width="98" height="100" class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100" />
+            </div>
+            <div class="flex-1 text-center lg:text-left">
+                <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack lg:text-2xl">
+                    Lorem ipsum dolor sit amet
+                </div>
+                <p class="mb-5 line-clamp-2 text-ColorBlack/80">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+                </p>
+                <a href="/service-details" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
+                    <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service Item -->
+
+<!-- Service Item -->
+<div class="jos" data-jos_delay="1.5">
+    <div class="group rounded-[10px] bg-white p-8 transition-all duration-300 ease-in-out hover:shadow-[0_4px_60px_0_rgba(10,16,47,0.06)] lg:p-10">
+        <div class="flex flex-col gap-x-10 gap-y-6 sm:gap-y-8 lg:flex-row">
+            <div class="relative mx-auto flex w-16 items-center justify-center lg:w-[98px]">
+                <img src="/static/img/icons/icon-black-service-1.svg" alt="icon-service" width="98" height="100" class="opcity-100 h-auto w-full transition-all duration-300 ease-in-out group-hover:opacity-0" />
+                <img src="/static/img/icons/icon-black-service-1.svg" alt="icon-service" width="98" height="100" class="absolute h-auto w-full opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100" />
+            </div>
+            <div class="flex-1 text-center lg:text-left">
+                <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack lg:text-2xl">
+                    Lorem ipsum dolor sit amet
+                </div>
+                <p class="mb-5 line-clamp-2 text-ColorBlack/80">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+                </p>
+                <a href="/service-details" class="inline-flex items-center gap-x-2 text-base font-bold text-ColorBlack group-hover:text-ColorBlue">Find out more
+                    <span class="transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service Item -->
+
+
+
+{% endblock content %}
+
+
+
+{% block footer %}
+    {% include "./partials/footer/footer1.html" %}
+{% endblock footer %} 

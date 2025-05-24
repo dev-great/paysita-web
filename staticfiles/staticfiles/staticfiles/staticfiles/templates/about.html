@@ -1,0 +1,504 @@
+{% extends './partials/layout1.html' %}
+
+{% block headerLogo %}
+<img src="/static/img/logo-blue-dark.png" alt="Masco" width="109" height="24" />
+{% endblock headerLogo%}
+
+{% block bgCustom %}
+bg-white
+{% endblock %}
+
+{% block headButtons %}
+
+<div class="flex items-center gap-6">
+    <a href="/signup" class="btn is-blue btn-animation group hidden rounded-[3px] sm:inline-block"><span>Contact Us</span></a>
+    <!-- Responsive Offcanvas Menu Button -->
+    <div class="block lg:hidden">
+        <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</div>
+
+{% endblock headButtons %}
+
+
+
+{% block content %}
+
+ <!-- Breadcrumb Section Start -->
+ <section class="section-breadcrumb">
+    <!-- Breadcrumb Section Spacer -->
+    <div class="breadcrumb-wrapper">
+        <!-- Section Container -->
+        <div class="container-default">
+            <div class="breadcrumb-block">
+                <h1 class="breadcrumb-title">About Us</h1>
+                <ul class="breadcrumb-nav">
+                    <li><a href="/">Home</a></li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Section Container -->
+
+    </div>
+    <!-- Breadcrumb Section Spacer -->
+</section>
+<!-- Breadcrumb Section End -->
+
+<!-- About Gallery Section Start -->
+<div class="section-about-gallery">
+    <!-- Section Spacer -->
+    <div class="section-space">
+        <!-- Section Container -->
+        <div class="container-default">
+            <!-- About Gallery Area -->
+            <div class="grid gap-x-6 gap-y-10 sm:grid-cols-3">
+                <!-- Single Gallery Image -->
+                <div class="jos" data-jos_animation="fade-up" data-jos_delay="0">
+                    <img src="/static/img/th-1/about-gallery-img-1.jpg" alt="about-gallery-img-1" width="416" height="286" class="rounded-lg" />
+                </div>
+                <!-- Single Gallery Image -->
+                <!-- Single Gallery Image -->
+                <div class="jos sm:translate-y-10" data-jos_animation="fade-down" data-jos_delay="0.3">
+                    <img src="/static/img/th-1/about-gallery-img-2.jpg" alt="about-gallery-img-1" width="416" height="381" class="rounded-lg" />
+                </div>
+                <!-- Single Gallery Image -->
+                <!-- Single Gallery Image -->
+                <div class="jos" data-jos_animation="fade-up" data-jos_delay="0.6">
+                    <img src="/static/img/th-1/about-gallery-img-3.jpg" alt="about-gallery-img-1" width="416" height="286" class="rounded-lg" />
+                </div>
+                <!-- Single Gallery Image -->
+            </div>
+            <!-- About Gallery Area -->
+        </div>
+        <!-- Section Container -->
+    </div>
+    <!-- Section Spacer -->
+</div>
+<!-- About Gallery Section End -->
+
+
+<!-- Brand Section Start -->
+<div class="section-brand">
+    <div class="jos">
+        <!-- Section Space -->
+        <div class="pb-[60px] md:pb-20 lg:pb-[100px]">
+            <!-- Section Container -->
+            <div class="container-default">
+                <div class="mx-auto mb-10 max-w-[80%] text-center text-xl font-semibold leading-[1.4] opacity-70 md:mb-16 lg:mb-20 lg:max-w-2xl">
+                    Trusted by the most innovative companies worldwide
+                </div>
+                <!-- Brand Slider -->
+                <div class="swiper brand-slider-2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="/static/img/th-6/brand-1.png" alt="brand-1" width="186" height="46" class="h-auto w-fit" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/static/img/th-6/brand-2.png" alt="brand-2" width="186" height="46" class="h-auto w-fit" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/static/img/th-6/brand-3.png" alt="brand-3" width="186" height="46" class="h-auto w-fit" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/static/img/th-6/brand-4.png" alt="brand-4" width="186" height="46" class="h-auto w-fit" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/static/img/th-6/brand-5.jpg" alt="brand-5" width="186" height="46" class="h-auto w-fit" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/static/img/th-6/brand-6.png" alt="brand-5" width="186" height="46" class="h-auto w-fit" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/static/img/th-6/brand-1.png" alt="brand-1" width="186" height="46" class="h-auto w-fit" />
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center min-h-[60px]">
+                            <img src="/static/img/th-6/brand-2.png" alt="brand-2" width="186" height="46" class="h-auto w-fit" />
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center min-h-[60px]">
+                            <img src="/static/img/th-6/brand-3.png" alt="brand-3" width="186" height="46" class="h-auto w-fit" />
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center min-h-[60px]">
+                            <img src="/static/img/th-6/brand-4.png" alt="brand-4" width="186" height="46" class="h-auto w-fit" />
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center min-h-[60px]">
+                            <img src="/static/img/th-6/brand-5.jpg" alt="brand-5" width="186" height="46" class="h-auto w-fit" />
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center min-h-[60px]">
+                            <img src="/static/img/th-6/brand-6.png" alt="brand-5" width="186" height="46" class="h-auto w-fit" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Brand Slider -->
+            </div>
+            <!-- Section Container -->
+        </div>
+        <!-- Section Space -->
+    </div>
+</div>
+<!-- Brand Section End -->
+
+<!-- About Hero Section Start -->
+<section class="section-about-hero">
+    <div class="relative z-10 overflow-hidden bg-[#FAF9F5]">
+        <!-- Section Space -->
+        <div class="section-space">
+            <!-- Section Container -->
+            <div class="container-custom has-container-custom">
+                <!-- About Hero Area -->
+                <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-[60px] xl:gap-[100px] xxl:grid-cols-[1fr_minmax(0,_1.1fr)]">
+                    <!-- About Hero Image Block -->
+                    <div class="jos order-2 lg:order-1" data-jos_animation="fade-left" data-jos_delay="0">
+                        <div class="relative flex items-center justify-center mx-auto lg:mx-0 max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-full">
+                            <img src="/static/img/th-1/hero-img.jpg" alt="hero image" width="600" height="579" class="h-auto w-full" />
+                            <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q" class="group group absolute flex h-[100px] w-[100px] items-center justify-center rounded-[50%] bg-white text-ColorBlue" aria-label="video-play">
+                                <span class="text-2xl transition-all duration-300 ease-linear group-hover:scale-110"><i class="fa-solid fa-play"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- About Hero Image Block -->
+                   <!-- About Hero Content Block -->
+                    <div class="jos order-1 lg:order-2" data-jos_animation="fade-right" data-jos_delay="0.3">
+                        <!-- Section Wrapper -->
+                        <div>
+                            <!-- Section Block -->
+                            <div class="mb-5">
+                                <h2>
+                                    A Financial Future Without Borders, Without Stress.
+                                </h2>
+                            </div>
+                            <!-- Section Block -->
+                            <p>
+                               At Paysita, our vision is simple: to build a borderless financial system designed for Africans, by Africans.
+                            </p>
+                            <p>We see a continent where it doesn’t matter whether you’re in Accra or Asaba, Kampala or Kano—you can move money, swap currencies, pay bills, and grow your hustle without running into limits or red tape.</p>
+                            <!-- Horizontal Line Separator -->
+                            <div class="my-7 h-px w-full bg-ColorBlack opacity-10 xl:my-10 xxl:my-14"></div>
+                            <!-- BlockQuote Block-->
+                            <div>
+                                <blockquote class="mb-6 font-semibold italic text-ColorBlack/80">
+                                    “At Paysita, we’re not solving problems with apps—we’re solving real-life hustle. From the markets of Aba to the remote workers in Accra, we’re giving power back”
+                                </blockquote>
+                                <div class="flex flex-col items-center gap-4 lg:flex-row">
+                                    <img src="/static/img/th-1/about-hero-user-blockquote-img.jpg" alt="Osita Onovo - Founder of Paysita" width="60" height="60" class="mx-auto h-[60px] w-[60px] rounded-[50%] lg:mx-0" />
+                                    <div>
+                                        <span class="block font-semibold">Osita Onovo</span>
+                                        <span class="text-sm text-opacity-80">Founder @ Paysita</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section Wrapper -->
+                    </div>
+                    <!-- About Hero Content Block -->
+
+                </div>
+                <!-- About Hero Area -->
+            </div>
+            <!-- Section Container -->
+        </div>
+        <!-- Section Space -->
+    </div>
+</section>
+<!-- About Hero Section End -->
+<!-- Fact Section Start -->
+<section class="section-fact">
+    <!-- Section Space -->
+    <div class="section-space">
+        <!-- Section Container -->
+        <div class="container-custom has-container-custom">
+            <!-- Fact Area Block -->
+            <div class="grid gap-6 gap-x-6 lg:grid-cols-2 xl:grid-cols-[1fr_minmax(0,_0.7fr)] xxl:gap-x-[185px]">
+                <!-- Content Block Left -->
+                <div class="jos" data-jos_animation="fade-right" data-jos_delay="0">
+                    <!-- Section Wrapper -->
+                    <div>
+                        <!-- Section Block -->
+                        <div class="mb-5">
+                            <h2>
+                               This is not just fintech. This is financial freedom for the people.
+                            </h2>
+                        </div>
+                        <!-- Section Block -->
+                        <p>
+                            Too many people across Africa are left behind by traditional banks. Paysita steps in with tools that are affordable, mobile-first, and made for the real African lifestyle.
+We’re here to make finance make sense. No long stories. Just ease, access, and empowerment.
+                        </p>
+                    </div>
+                    <!-- Section Wrapper -->
+                    <a href="/contact" class="btn is-blue is-rounded btn-animation is-large group mt-8 inline-block lg:mt-[50px]"><span>Get in touch</span></a>
+                </div>
+                <!-- Content Block Left -->
+                <!-- Content Block Right -->
+                <div>
+                     <div class="relative flex items-center justify-center mx-auto lg:mx-0 max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-full">
+                            <img src="/static/img/th-1/hero-img.jpg" alt="hero image" width="600" height="579" class="h-auto w-full" />
+                           
+                        </div>
+                </div>
+                <!-- Content Block Right -->
+            </div>
+            <!-- Fact Area Block -->
+        </div>
+        <!-- Section Container -->
+    </div>
+    <!-- Section Space -->
+</section>
+<!-- Fact Section End -->
+
+
+<!-- Feature Section Start -->
+<section class="section-features">
+    <div class="bg-ColorOffWhite">
+        <!-- Section Space -->
+        <div class="section-space">
+            <!-- Section Container -->
+            <div class="container-default">
+                <!-- Section Content Wrapper -->
+                <div class="jos mb-[60px] xl:mb-20">
+                    <!-- Section Content Block -->
+                    <div class="mx-auto max-w-[526px]">
+                        <h2 class="text-center">
+                            Our Services at a Glance
+                        </h2>
+                    </div>
+                    <!-- Section Content Block -->
+                </div>
+                <!-- Section Content Wrapper -->
+
+                <!-- Feature List -->
+                <div class="grid gap-10 sm:grid-cols-2 xl:grid-cols-3 xl:gap-10 xxl:gap-x-20 xxl:gap-y-[60px]">
+                    <!-- Feature Item -->
+                    <div class="jos" data-jos_animation="fade-left" data-jos_delay="0">
+                        <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                            <img src="/static/img/icons/icon-yellow-feature-1.svg" alt="icon-yellow-feature-1" width="60" height="60" class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                            <div>
+                                <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                    Multi-Currency Transfers
+                                </div>
+                                <p>
+                                   Send and receive money in different currencies—quickly and affordably.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Feature Item -->
+                    <!-- Feature Item -->
+                    <div class="jos" data-jos_animation="fade-left" data-jos_delay="0.3">
+                        <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                            <img src="/static/img/icons/icon-yellow-feature-1.svg" alt="icon-yellow-feature-1" width="60" height="60" class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                            <div>
+                                <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                    Currency Swaps
+                                </div>
+                                <p>
+                                    Avoid crazy exchange rates. Swap your Naira, Cedis, USD and more instantly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Feature Item -->
+                    <!-- Feature Item -->
+                    <div class="jos" data-jos_animation="fade-left" data-jos_delay="0.6">
+                        <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                            <img src="/static/img/icons/icon-yellow-feature-1.svg" alt="icon-yellow-feature-3" width="60" height="60" class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                            <div>
+                                <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                   Airtime-to-Cash Conversion
+                                </div>
+                                <p>
+                                    Turn excess airtime into spendable cash. One tap and done.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Feature Item -->
+                    <!-- Feature Item -->
+                    <div class="jos" data-jos_animation="fade-right" data-jos_delay="0.9">
+                        <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                            <img src="/static/img/icons/icon-yellow-feature-1.svg" alt="icon-yellow-feature-4" width="60" height="60" class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                            <div>
+                                <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                    Virtual Dollar Cards
+                                </div>
+                                <p>
+                                   Shop online globally or pay for Netflix, Spotify, and ads without drama.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Feature Item -->
+                    <!-- Feature Item -->
+                    <div class="jos" data-jos_animation="fade-right" data-jos_delay="1.2">
+                        <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                            <img src="/static/img/icons/icon-yellow-feature-1.svg" alt="icon-yellow-feature-5" width="60" height="60" class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                            <div>
+                                <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                    Utility Bill Payments
+                                </div>
+                                <p>
+                                   Settle electricity, water, TV subscriptions, and more in one place
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Feature Item -->
+                    <!-- Feature Item -->
+                    <div class="jos" data-jos_animation="fade-right" data-jos_delay="1.5">
+                        <div class="flex flex-col gap-6 text-center lg:flex-row lg:text-left">
+                            <img src="/static/img/icons/icon-yellow-feature-1.svg" alt="icon-yellow-feature-6" width="60" height="60" class="mx-auto h-[60px] w-[60px] lg:mx-0" />
+                            <div>
+                                <div class="mb-4 text-xl font-semibold leading-[1.33] -tracking-[0.5] xxl:text-2xl">
+                                    Gift Card Exchange
+                                </div>
+                                <p>
+                                   Buy, sell, and trade gift cards easily—from Amazon to Steam and beyond.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Feature Item -->
+                </div>
+                <!-- Feature List -->
+            </div>
+            <!-- Section Container -->
+        </div>
+        <!-- Section Space -->
+    </div>
+</section>
+<!-- Feature Section End -->
+
+<!-- Team Section Start -->
+<section class="section-team">
+    <div class="bg-ColorOffWhite">
+        <!-- Section Space -->
+        <div class="section-space">
+            <!-- Section Container -->
+            <div class="container-default">
+                <!-- Section Content Wrapper -->
+                <div class="jos mb-[60px] xl:mb-20">
+                    <!-- Section Content Block -->
+                    <div class="mx-auto max-w-[526px]">
+                        <h2 class="text-center">
+                            Amazing team behind our creative products
+                        </h2>
+                    </div>
+                    <!-- Section Content Block -->
+                </div>
+                <!-- Section Content Wrapper -->
+
+                <!-- Team List -->
+                <div class="grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+                    <!-- Team Item -->
+                    <div class="jos flex flex-col items-center justify-center rounded-[10px] bg-white p-5 text-center" data-jos_animation="flip-left">
+                        <img src="/static/img/th-1/team-img-1.jpg" alt="team-img-1" width="266" height="250" class="h-auto w-full rounded-[10px] lg:w-auto" />
+                        <div class="mb-4 mt-6">
+                            <div class="mb-1 text-xl font-semibold">Osita Onovo</div>
+                            <span class="block text-opacity-80">CEO & founder</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-[10px] xl:gap-4">
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-ColorBlack bg-opacity-5 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorBlack hover:bg-opacity-100 hover:text-white" aria-label="twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-ColorBlack bg-opacity-5 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorBlack hover:bg-opacity-100 hover:text-white" aria-label="facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-ColorBlack bg-opacity-5 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorBlack hover:bg-opacity-100 hover:text-white" aria-label="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                          
+                        </div>
+                    </div>
+                    <!-- Team Item -->
+                    <!-- Team Item -->
+                    <div class="jos flex flex-col items-center justify-center rounded-[10px] bg-white p-5 text-center" data-jos_animation="flip-left">
+                        <img src="/static/img/th-1/team-img-2.jpg" alt="team-img-2" width="266" height="250" class="h-auto w-full rounded-[10px] lg:w-auto" />
+                        <div class="mb-4 mt-6">
+                            <div class="mb-1 text-xl font-semibold">
+                                Ishaku Andrew
+                            </div>
+                            <span class="block text-opacity-80">Co-founder</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-[10px] xl:gap-4">
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-ColorBlack bg-opacity-5 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorBlack hover:bg-opacity-100 hover:text-white" aria-label="twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-ColorBlack bg-opacity-5 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorBlack hover:bg-opacity-100 hover:text-white" aria-label="facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-ColorBlack bg-opacity-5 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorBlack hover:bg-opacity-100 hover:text-white" aria-label="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                          
+                        </div>
+                    </div>
+                    <!-- Team Item -->
+                    <!-- Team Item -->
+                    <div class="jos flex flex-col items-center justify-center rounded-[10px] bg-white p-5 text-center" data-jos_animation="flip-left">
+                        <img src="/static/img/th-1/team-img-3.jpg" alt="team-img-3" width="266" height="250" class="h-auto w-full rounded-[10px] lg:w-auto" />
+                        <div class="mb-4 mt-6">
+                            <div class="mb-1 text-xl font-semibold">David Oruwuihe</div>
+                            <span class="block text-opacity-80">Chief Financial Officer</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-[10px] xl:gap-4">
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-ColorBlack bg-opacity-5 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorBlack hover:bg-opacity-100 hover:text-white" aria-label="twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-ColorBlack bg-opacity-5 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorBlack hover:bg-opacity-100 hover:text-white" aria-label="facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-ColorBlack bg-opacity-5 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorBlack hover:bg-opacity-100 hover:text-white" aria-label="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                          
+                        </div>
+                    </div>
+                    <!-- Team Item -->
+                    <!-- Team Item -->
+                    <div class="jos flex flex-col items-center justify-center rounded-[10px] bg-white p-5 text-center" data-jos_animation="flip-left">
+                        <img src="/static/img/th-1/team-img-4.jpg" alt="team-img-4" width="266" height="250" class="h-auto w-full rounded-[10px] lg:w-auto" />
+                        <div class="mb-4 mt-6">
+                            <div class="mb-1 text-xl font-semibold">Greatness Marshal</div>
+                            <span class="block text-opacity-80">Technical Lead</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-[10px] xl:gap-4">
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-ColorBlack bg-opacity-5 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorBlack hover:bg-opacity-100 hover:text-white" aria-label="twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-ColorBlack bg-opacity-5 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorBlack hover:bg-opacity-100 hover:text-white" aria-label="facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-ColorBlack bg-opacity-5 text-sm text-ColorBlack transition-all duration-300 hover:bg-ColorBlack hover:bg-opacity-100 hover:text-white" aria-label="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                          
+                        </div>
+                    </div>
+                    <!-- Team Item -->
+                </div>
+                <!-- Team List -->
+            </div>
+            <!-- Section Container -->
+        </div>
+        <!-- Section Space -->
+    </div>
+</section>
+<!-- Team Section End -->
+
+{% endblock content %}
+
+
+
+{% block footer %}
+{% include "./partials/footer/footer1.html" %}
+{% endblock footer %} 
