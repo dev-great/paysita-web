@@ -13,3 +13,9 @@ def faq(request):
 
 def portfolio(request):
     return render(request, "portfolio.html")
+
+def privacypolicy(request):
+    return render(request, "privacy_policy.html")
+
+def termscondition(request):
+    return render(request, "terms_condition.html")

@@ -27,6 +27,8 @@ urlpatterns = [
     path('faq', views.faq),
     path('portfolio', views.portfolio),
     path('blog', include('blog.urls')),
+    path('privacypolicy', views.privacypolicy),
+    path('termscondition', views.termscondition),
     path('ckeditor/', include('ckeditor_uploader.urls')),   # Add this line
 ]
 

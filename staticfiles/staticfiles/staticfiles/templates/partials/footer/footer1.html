@@ -1,3 +1,4 @@
+{% load static %}
 <!-- Footer Section Start -->
 <footer class="section-footer">
     <div class="bg-ColorBlack">
@@ -26,7 +27,7 @@
 
             <!-- CTA Shape -->
             <div class="absolute right-[9%] top-8 -z-10 hidden xxl:block">
-                <img src="static/img/elements/cta-1-shape-1.svg" alt="cta-1-shape-1" width="115" height="130" />
+               <img src="{% static 'img/elements/cta-1-shape-1.svg' %}" alt="cta-1-shape-1" width="115" height="130" />
             </div>
         </div>
         <!-- Footer Area Top -->
@@ -47,7 +48,10 @@
                         <div class="flex flex-col gap-y-7 md:col-span-3 lg:col-span-1">
                             <!-- Footer Logo -->
                             <a href="/">
-                                <img src="/static/img/logo-w.svg" alt="Masco" width="109" height="24" />
+                                {% load static %}
+
+<img src="{% static 'img/logo-w.svg' %}" alt="Masco" width="109" height="24" />
+
                             </a>
                             <!-- Footer Content -->
                             <div>
@@ -59,18 +63,16 @@
                                 <a href="mailto:yourdemo@email.com" class="my-6 block underline-offset-4 transition-all duration-300 hover:underline">hello@paysita.com</a>
                                 <!-- Footer Social Link -->
                                 <div class="flex flex-wrap gap-5">
-                                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-5 text-sm text-white transition-all duration-300 hover:bg-ColorBlue" aria-label="twitter">
+                                    <a href="https://twitter.com" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-5 text-sm text-white transition-all duration-300 hover:bg-ColorBlue" aria-label="twitter">
                                         <i class="fa-brands fa-x-twitter"></i>
                                     </a>
-                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-5 text-sm text-white transition-all duration-300 hover:bg-ColorBlue" aria-label="facebook">
+                                    <a href="https://www.facebook.com/" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-5 text-sm text-white transition-all duration-300 hover:bg-ColorBlue" aria-label="facebook">
                                         <i class="fa-brands fa-facebook-f"></i>
                                     </a>
-                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-5 text-sm text-white transition-all duration-300 hover:bg-ColorBlue" aria-label="instagram">
+                                    <a href="https://www.instagram.com/" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-5 text-sm text-white transition-all duration-300 hover:bg-ColorBlue" aria-label="instagram">
                                         <i class="fa-brands fa-instagram"></i>
                                     </a>
-                                    <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white bg-opacity-5 text-sm text-white transition-all duration-300 hover:bg-ColorBlue" aria-label="github">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
+                                   
                                 </div>
                             </div>
                             <!-- Footer Content -->
@@ -94,11 +96,9 @@
                                 <li>
                                     <a href="/contact" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Contact</a>
                                 </li>
+                               
                                 <li>
-                                    <a href="/contact" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Products</a>
-                                </li>
-                                <li>
-                                    <a href="/contact" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Business</a>
+                                    <a href="/portfolio" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Business</a>
                                 </li>
                             </ul>
                         </div>
@@ -115,19 +115,19 @@
                             <!-- Footer Navbar -->
                             <ul class="flex flex-col gap-y-[10px] capitalize">
                                 <li>
-                                    <a href="/signup" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">USSD</a>
+                                    <a href="#" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">USSD</a>
                                 </li>
                                 <li>
-                                    <a href="/login" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">POS</a>
+                                    <a href="#" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">POS</a>
                                 </li>
                                 <li>
-                                    <a href="/error404" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Virtual Card</a>
+                                    <a href="#" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Virtual Card</a>
                                 </li>
                                 <li>
-                                    <a href="/error404" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Bill Payment</a>
+                                    <a href="#" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Bill Payment</a>
                                 </li>
                                 <li>
-                                    <a href="/error404" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">What's app Integration</a>
+                                    <a href="#" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">What's app Integration</a>
                                 </li>
                                 
                             </ul>
@@ -145,16 +145,16 @@
                             <!-- Footer Navbar -->
                             <ul class="flex flex-col gap-y-[10px] capitalize">
                                 <li>
-                                    <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Support</a>
+                                    <a href="/" rel="noopener noreferrer" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Support</a>
                                 </li>
                                 <li>
-                                    <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Privacy policy</a>
+                                    <a href="/privacypolicy" rel="noopener noreferrer" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Privacy policy</a>
                                 </li>
                                 <li>
-                                    <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Terms & Conditions</a>
+                                    <a href="/termscondition" rel="noopener noreferrer" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">Terms & Conditions</a>
                                 </li>
                                 <li>
-                                    <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">FAQ's</a>
+                                    <a href="/faq" rel="noopener noreferrer" class="hover:opcity-100 underline-offset-4 opacity-80 transition-all duration-300 ease-linear hover:underline">FAQ's</a>
                                 </li>
                                 
                             </ul>

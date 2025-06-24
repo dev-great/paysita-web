@@ -1,0 +1,359 @@
+{% extends './partials/layout1.html' %}
+
+{% block headerLogo %}
+<img src="/static/img/logo-blue-dark.png" alt="Masco" width="109" height="24" />
+{% endblock headerLogo%}
+
+{% block bgCustom %}
+bg-white
+{% endblock %}
+
+{% block headButtons %}
+
+<div class="flex items-center gap-6">
+    <a href="/login" class="btn-text hidden hover:text-ColorBlue md:inline-block">Login</a>
+    <a href="/signup" class="btn is-blue is-rounded btn-animation group hidden md:inline-block"><span>Sign up free</span></a>
+    <!-- Responsive Offcanvas Menu Button -->
+    <div class="block lg:hidden">
+        <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</div>
+
+{% endblock headButtons %}
+
+
+
+{% block content %}
+
+ <!-- Breadcrumb Section Start -->
+ <section class="section-breadcrumb">
+    <!-- Breadcrumb Section Spacer -->
+    <div class="breadcrumb-wrapper">
+        <!-- Section Container -->
+        <div class="container-default">
+            <div class="breadcrumb-block">
+                <h1 class="breadcrumb-title">Portfolio Classic</h1>
+                <ul class="breadcrumb-nav">
+                    <li><a href="/">Home</a></li>
+                    <li>Portfolio Classic</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Section Container -->
+
+        <!-- Breadcrumb Shape - 1 -->
+        <div class="absolute left-0 top-0 -z-10">
+            <img src="/static/img/elements/breadcrumb-shape-1.svg" alt="hero-shape-1" width="291" height="380" />
+        </div>
+
+        <!-- Breadcrumb Shape - 2 -->
+        <div class="absolute bottom-0 right-0 -z-[1]">
+            <img src="/static/img/elements/breadcrumb-shape-2.svg" alt="hero-shape-2" width="291" height="380" />
+        </div>
+    </div>
+    <!-- Breadcrumb Section Spacer -->
+</section>
+<!-- Breadcrumb Section End -->
+
+<!-- Portfolio Section Start -->
+<div class="section-portfolio">
+    <!-- Section Space -->
+    <div class="section-space">
+        <!-- Section Container -->
+        <div class="container-default">
+            <!-- Tab Button Menu -->
+            <div class="flex flex-wrap justify-center gap-3 md:gap-6">
+                <button class="active tab-button btn tab-btn-blue is-rounded h-[50px]" data-tab="show-all">
+                    Show All
+                </button>
+                <button class="tab-button btn tab-btn-blue is-rounded h-[50px]" data-tab="website">
+                    Website
+                </button>
+                <button class="tab-button btn tab-btn-blue is-rounded h-[50px]" data-tab="branding">
+                    Branding
+                </button>
+                <button class="tab-button btn tab-btn-blue is-rounded h-[50px]" data-tab="commercial">
+                    Commercial
+                </button>
+                <button class="tab-button btn tab-btn-blue is-rounded h-[50px]" data-tab="digital-art">
+                    Digital Art
+                </button>
+                <button class="tab-button btn tab-btn-blue is-rounded h-[50px]" data-tab="ui-ux-design">
+                    UI/UX Design
+                </button>
+            </div>
+            <!-- Tab Button Menu -->
+
+            <!-- Portfolio Area -->
+            <div class="my-10 lg:my-[60xp] xl:my-20">
+                <!-- Portfolio List -->
+                <div class="tab-content grid gap-8 md:grid-cols-2 lg:gap-10 xl:gap-[60px]" id="show-all">
+                    <!-- Portfolio Item -->
+                    <div class="jos" data-jos_delay="0">
+                        <div class="group">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/th-1/portfolio-img-1.jpg" alt="portfolio-img-1" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                    <a href="/portfolio-details" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">App — The power of communication</a>
+                                    <a href="#" class="hover:text-ColorBlue">UI/UX Design</a>
+                                </div>
+                                <a href="/portfolio-details" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                    <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item -->
+                    <!-- Portfolio Item -->
+                    <div class="jos" data-jos_delay="0.3">
+                        <div class="group">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/th-1/portfolio-img-2.jpg" alt="portfolio-img-2" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                    <a href="/portfolio-details" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">Website — The future lifestyle platform.</a>
+                                    <a href="#" class="hover:text-ColorBlue">Branding</a>
+                                </div>
+                                <a href="/portfolio-details" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                    <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item -->
+                    <!-- Portfolio Item -->
+                    <div class="jos" data-jos_delay="0.6">
+                        <div class="group">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/th-1/portfolio-img-3.jpg" alt="portfolio-img-3" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                    <a href="/portfolio-details" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">Campaign — Provision of information</a>
+                                    <a href="#" class="hover:text-ColorBlue">Marketing</a>
+                                </div>
+                                <a href="/portfolio-details" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                    <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item -->
+                    <!-- Portfolio Item -->
+                    <div class="jos" data-jos_delay="0.9">
+                        <div class="group">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/th-1/portfolio-img-4.jpg" alt="portfolio-img-4" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                    <a href="/portfolio-details" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">Journal — Asset in business</a>
+                                    <a href="#" class="hover:text-ColorBlue">Commercial</a>
+                                </div>
+                                <a href="/portfolio-details" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                    <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item -->
+                    <!-- Portfolio Item -->
+                    <div class="jos" data-jos_delay="1.2">
+                        <div class="group">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/th-1/portfolio-img-5.jpg" alt="portfolio-img-5" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                    <a href="/portfolio-details" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">Book — Design of the year</a>
+                                    <a href="#" class="hover:text-ColorBlue">UI/UX Design</a>
+                                </div>
+                                <a href="/portfolio-details" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                    <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item -->
+                    <!-- Portfolio Item -->
+                    <div class="jos" data-jos_delay="1.5">
+                        <div class="group">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/th-1/portfolio-img-6.jpg" alt="portfolio-img-6" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                    <a href="/portfolio-details" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">Strategic — Ways to level up your brand</a>
+                                    <a href="#" class="hover:text-ColorBlue">Branding</a>
+                                </div>
+                                <a href="/portfolio-details" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                    <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item -->
+                </div>
+                <!-- Portfolio List -->
+                <!-- Portfolio List -->
+                <div class="tab-content grid hidden gap-8 md:grid-cols-2 lg:gap-10 xl:gap-[60px]" id="website">
+                    <!-- Portfolio Item -->
+                    <div class="jos" data-jos_delay="0">
+                        <div class="group">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/th-1/portfolio-img-2.jpg" alt="portfolio-img-2" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                    <a href="/portfolio-details" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">Website — The future lifestyle platform.</a>
+                                    <a href="#" class="hover:text-ColorBlue">Branding</a>
+                                </div>
+                                <a href="/portfolio-details" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                    <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item -->
+                </div>
+                <!-- Portfolio List -->
+                <!-- Portfolio List -->
+                <div class="tab-content grid hidden gap-8 md:grid-cols-2 lg:gap-10 xl:gap-[60px]" id="branding">
+                    <!-- Portfolio Item -->
+                    <div class="jos" data-jos_delay="0">
+                        <div class="group">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/th-1/portfolio-img-2.jpg" alt="portfolio-img-2" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                    <a href="/portfolio-details" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">Website — The future lifestyle platform.</a>
+                                    <a href="#" class="hover:text-ColorBlue">Branding</a>
+                                </div>
+                                <a href="/portfolio-details" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                    <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item -->
+                    <!-- Portfolio Item -->
+                    <div class="jos" data-jos_delay="0.3">
+                        <div class="group">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/th-1/portfolio-img-6.jpg" alt="portfolio-img-6" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                    <a href="/portfolio-details" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">Strategic — Ways to level up your brand</a>
+                                    <a href="#" class="hover:text-ColorBlue">Branding</a>
+                                </div>
+                                <a href="/portfolio-details" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                    <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item -->
+                </div>
+                <!-- Portfolio List -->
+                <!-- Portfolio List -->
+                <div class="tab-content grid hidden gap-8 md:grid-cols-2 lg:gap-10 xl:gap-[60px]" id="commercial">
+                    <!-- Portfolio Item -->
+                    <div class="jos" data-jos_delay="0">
+                        <div class="group">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/th-1/portfolio-img-4.jpg" alt="portfolio-img-4" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                    <a href="/portfolio-details" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">Journal — Asset in business</a>
+                                    <a href="#" class="hover:text-ColorBlue">Commercial</a>
+                                </div>
+                                <a href="/portfolio-details" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                    <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item -->
+                </div>
+                <!-- Portfolio List -->
+                <!-- Portfolio List -->
+                <div class="tab-content grid hidden gap-8 md:grid-cols-2 lg:gap-10 xl:gap-[60px]" id="digital-art">
+                    <!-- Portfolio Item -->
+                    <div class="jos" data-jos_delay="0">
+                        <div class="group">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/th-1/portfolio-img-3.jpg" alt="portfolio-img-3" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                    <a href="/portfolio-details" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">Campaign — Provision of information</a>
+                                    <a href="#" class="hover:text-ColorBlue">Marketing</a>
+                                </div>
+                                <a href="/portfolio-details" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                    <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item -->
+                </div>
+                <!-- Portfolio List -->
+                <!-- Portfolio List -->
+                <div class="tab-content grid hidden gap-8 md:grid-cols-2 lg:gap-10 xl:gap-[60px]" id="ui-ux-design">
+                    <!-- Portfolio Item -->
+                    <div class="jos" data-jos_delay="0">
+                        <div class="group">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/th-1/portfolio-img-1.jpg" alt="portfolio-img-1" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                    <a href="/portfolio-details" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">App — The power of communication</a>
+                                    <a href="#" class="hover:text-ColorBlue">UI/UX Design</a>
+                                </div>
+                                <a href="/portfolio-details" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                    <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item -->
+                    <!-- Portfolio Item -->
+                    <div class="jos" data-jos_delay="0.3">
+                        <div class="group">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/th-1/portfolio-img-5.jpg" alt="portfolio-img-5" width="617" height="450" class="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105" />
+                            </div>
+                            <div class="mt-6">
+                                <div class="mb-5 flex flex-wrap justify-between gap-5 lg:flex-nowrap xl:mb-7">
+                                    <a href="/portfolio-details" class="text-xl font-semibold leading-[1.33] -tracking-[0.5px] text-ColorBlack group-hover:text-ColorBlue xl:text-2xl">Book — Design of the year</a>
+                                    <a href="#" class="hover:text-ColorBlue">UI/UX Design</a>
+                                </div>
+                                <a href="/portfolio-details" class="text-base font-bold capitalize leading-[1.5] group-hover:text-ColorBlue">View work
+                                    <span class="inline-block transition-all duration-150 group-hover:translate-x-2"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item -->
+                </div>
+                <!-- Portfolio List -->
+            </div>
+            <!-- Portfolio Area -->
+
+            <div class="flex justify-center">
+                <button class="btn is-blue is-rounded is-large group">
+                    View more
+                </button>
+            </div>
+        </div>
+        <!-- Section Container -->
+    </div>
+    <!-- Section Space -->
+</div>
+<!-- Portfolio Section End -->
+
+{% endblock content %}
+
+
+
+{% block footer %}
+    {% include "./partials/footer/footer1.html" %}
+{% endblock footer %} 
